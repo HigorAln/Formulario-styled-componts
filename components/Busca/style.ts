@@ -28,7 +28,7 @@ export const Empresa = styled.div`
 
     label {
       width: 32%;
-      border: 1px solid #bbb;
+      border: 1px solid #ddd;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -62,7 +62,7 @@ export const Contrato = styled.div`
 
     label {
       width: 32%;
-      border: 1px solid #bbb;
+      border: 1px solid #ddd;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,6 +93,8 @@ export const Salario = styled.div`
       width: 90%;
       padding: 10px;
       font-size: 18px;
+      border: 1px solid #ddd;
+      background-color: transparent;
     }
   }
   p {

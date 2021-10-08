@@ -7,7 +7,6 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid gray;
 `;
 
 export const Form = styled.form`

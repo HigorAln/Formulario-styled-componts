@@ -1,16 +1,33 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable import/extensions */
+import { useState } from 'react';
 import { Main, Photo, Info1, Info2 } from './style';
 
 export default function Inputs() {
+  const [photo, setPhoto] = useState(null);
+  const ManipularPhoto = (e) => {
+    setPhoto(e.target.value);
+  };
   return (
     <Main>
       <Photo>
         <div>
-          <span className="material-icons-outlined">add_a_photo</span>
+          {photo !== null ? (
+            <p>{photo}</p>
+          ) : (
+            <span className="material-icons-outlined">add_a_photo</span>
+          )}
         </div>
         <label htmlFor="avatar">Escolha uma foto para seu perfil</label>
-        <input type="file" id="avatar" name="avatar" accept="image/*" hidden />
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/*"
+          hidden
+          onChange={ManipularPhoto}
+        />
       </Photo>
       <Info1>
         <div>

@@ -4,7 +4,7 @@ export const Main = styled.div`
   margin-top: 75px;
   width: 85%;
   height: 250px;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   border-radius: 7px;
   display: grid;
   grid-template-columns: 25% 75%;
@@ -16,7 +16,7 @@ export const Main = styled.div`
 
 export const Photo = styled.div`
   grid-area: photo;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +30,7 @@ export const Photo = styled.div`
     align-items: center;
     border: 1px solid #bbb;
     border-radius: 5px;
+    flex-wrap: wrap;
 
     span {
       font-size: 50px;
@@ -49,6 +50,7 @@ export const Photo = styled.div`
     cursor: pointer;
     font-weight: 600;
     margin-top: 5px;
+    padding: 2px;
 
     &:hover {
       filter: opacity(50%);
@@ -79,7 +81,6 @@ export const Info1 = styled.div`
       text-transform: capitalize;
       border: 1px solid #999;
       border-radius: 3px;
-      box-shadow: 0 0 5px #ccc, inset 0 0 5px #ccc;
     }
   }
 `;
@@ -107,7 +108,6 @@ export const Info2 = styled.div`
       text-transform: capitalize;
       border: 1px solid #999;
       border-radius: 3px;
-      box-shadow: 0 0 5px #ccc, inset 0 0 5px #ccc;
     }
   }
 `;

@@ -4,7 +4,7 @@ export const Main = styled.div`
   margin-top: 75px;
   width: 85%;
   height: 100%;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   border-radius: 7px;
   display: flex;
   flex-direction: column;

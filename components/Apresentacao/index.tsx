@@ -1,8 +1,11 @@
 /* eslint-disable import/extensions */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { useState } from 'react';
 import { Main, Div, Curriculo } from './style';
 
 export default function Apresentacao() {
+  const [curriculo, setCurriculo] = useState(null);
+
   return (
     <Main>
       <Div style={{ marginTop: '30px' }}>
@@ -71,7 +74,14 @@ export default function Apresentacao() {
             </span>
           </p>
           <label htmlFor="curriculo">Escolha Arquivo</label>
-          <input type="file" name="curriculo" id="curriculo" hidden />
+          <input
+            type="file"
+            name="curriculo"
+            id="curriculo"
+            hidden
+            onChange={(e) => setCurriculo(e.target.value)}
+          />
+          {curriculo ? <p>{curriculo}</p> : ''}
         </div>
       </Curriculo>
     </Main>

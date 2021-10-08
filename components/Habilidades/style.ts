@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Main = styled.div`
   width: 85%;
   height: 100%;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   margin-top: 75px;
   padding: 20px;
   border-radius: 5px;
@@ -61,9 +61,9 @@ export const Experiencia = styled.div`
       cursor: pointer;
       padding: 20px;
 
-      label {
-        font-size: 15px;
-        font-weight: normal;
+      p {
+        font-size: 17px;
+        font-weight: bold;
         margin-bottom: 2px;
         margin-left: 5px;
       }
