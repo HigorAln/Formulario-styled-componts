@@ -79,7 +79,7 @@ export default function Busca() {
               <p>Sim</p>
             </label>
             <label>
-              <input type="radio" value="nao" name="remoto" checked />
+              <input type="radio" value="nao" name="remoto" />
               <p>Nao</p>
             </label>
           </div>
@@ -92,7 +92,7 @@ export default function Busca() {
               <p>Sim</p>
             </label>
             <label>
-              <input type="radio" value="nao" name="deficiente" checked />
+              <input type="radio" value="nao" name="deficiente" />
               <p>Nao</p>
             </label>
           </div>

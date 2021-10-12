@@ -16,18 +16,18 @@ export default function Habilidades() {
         </select>
       </Carreira>
       <Experiencia>
-        <label>Experiencia</label>
+        <p>Experiencia</p>
         <div>
-          <label>
-            <input type="radio" name="experiencia" value="junior" checked />
+          <label htmlFor="junior">
+            <input type="radio" id="junior" name="experiencia" value="junior" />
             <p>Junior</p>
           </label>
-          <label>
-            <input type="radio" name="experiencia" value="pleno" />
+          <label htmlFor="pleno">
+            <input type="radio" id="pleno" name="experiencia" value="pleno" />
             <p>Pleno</p>
           </label>
-          <label>
-            <input type="radio" name="experiencia" value="senior" />
+          <label htmlFor="senior">
+            <input type="radio" id="senior" name="experiencia" value="senior" />
             <p>Senior</p>
           </label>
         </div>

@@ -40,6 +40,12 @@ export const Experiencia = styled.div`
   display: flex;
   flex-direction: column;
 
+  p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
   label {
     font-size: 17px;
     font-weight: bold;
